@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeFragment_to_HanTuFragment"
+            app:destination="@id/hantu"
+            />
+        <action
+        android:id="@+id/action_HomeFragment_to_OnTapFragment"
+        app:destination="@id/OnTap" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ScoreFragment"
+            app:destination="@id/score" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_SearchQuesFragment"
+            app:destination="@id/Search" />
+    </fragment>
+    <fragment
+        android:id="@+id/Search"
+        android:name="com.example.app.Question.SearchQuesFragment"
+        android:label="Tim Kiem"
+        tools:layout="@layout/fragment_search_ques" />
+    <fragment
+        android:id="@+id/hantu"
+        android:name="com.example.app.ui.HanTu.HanTuFragment"
+        android:label="Tim Kiem"
+        tools:layout="@layout/fragment_han_tu">
+    <action
+        android:id="@+id/action_HanTuFragment_to_HanTuN5Fragment"
+        app:destination="@id/hantuN5" />
+    <action
+        android:id="@+id/action_HanTuFragment_to_HanTuN4Fragment"
+        app:destination="@id/hantuN4" />
+    <action
+        android:id="@+id/action_HanTuFragment_to_HanTuN3Fragment"
+        app:destination="@id/hantuN3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/OnTap"
+        android:name="com.example.app.ui.OnTap.OnTapFragment"
+        android:label="@string/menu_revision"
+        tools:layout="@layout/fragment_on_tap">
+        <action
+            android:id="@+id/action_OnTapFragment_to_TestKanjiN5Fragment"
+            app:destination="@id/kanjiN5" />
+        <action
+            android:id="@+id/action_OnTapFragment_to_TestKanjiN4Fragment"
+            app:destination="@id/kanjiN4" />
+        <action
+            android:id="@+id/action_OnTapFragment_to_TestKanjiN3Fragment"
+            app:destination="@id/kanjiN3" />
+    </fragment>
+    <fragment
+        android:id="@+id/hantuN5"
+        android:name="com.example.app.ui.hantuN5.HanTuN5Fragment"
+        android:label="Tim Kiem"
+        tools:layout="@layout/fragment_han_tu_n5" />
+    <fragment
+        android:id="@+id/hantuN4"
+        android:name="com.example.app.ui.hantuN4.HanTuN4Fragment"
+        android:label="Tim Kiem"
+        tools:layout="@layout/fragment_han_tu_n4" />
+    <fragment
+        android:id="@+id/hantuN3"
+        android:name="com.example.app.ui.hantuN3.HanTuN3Fragment"
+        android:label="Tim Kiem"
+        tools:layout="@layout/fragment_han_tu_n3" />
+
+    <fragment
+        android:id="@+id/kanjiN5"
+        android:name="com.example.app.ui.TestKanjiN5.TestKanjiN5Fragment"
+        android:label="@string/menu_revision"
+        tools:layout="@layout/fragment_test_kanji_n5">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/kanjiN4"
+        android:name="com.example.app.ui.TestKanjiN4.TestKanjiN4Fragment"
+        tools:layout="@layout/fragment_test_kanji_n4">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/kanjiN3"
+        android:name="com.example.app.ui.TestKanjiN3.TestKanjiN3Fragment"
+        tools:layout="@layout/fragment_test_kanji_n3">
+    </fragment>
+    <fragment
+        android:id="@+id/score"
+        android:name="com.example.app.score.ScoreFragment"
+        android:label="Xem Diem"
+        tools:layout="@layout/fragment_score" />
+
+
+
+
+
+</navigation>

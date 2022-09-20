@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/Search"
+            android:icon="@drawable/ketqua"
+            android:title="Tìm kiếm" />
+    </group>
+    <item android:title="Ôn Tập">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/hantu"
+                    android:icon="@drawable/cauhoi"
+                    android:title="Hán Tự"/>
+                <item
+                    android:id="@+id/OnTap"
+                    android:icon="@drawable/cauhoi"
+                    android:title="Ôn Tập"/>s
+
+                <item
+                    android:id="@+id/score"
+                    android:icon="@drawable/cauhoi"
+                    android:title="Danh sách điểm" />
+            </group>
+        </menu>
+    </item>
+</menu>
